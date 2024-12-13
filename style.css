@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark mode background */
+    color: #f1f1f1;           /* Light text for contrast */
+    line-height: 1.6;
+}
+
+/* Center Content */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #00bcd4; /* Surfline-inspired teal */
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #f1f1f1; /* Light text */
+}
+
+/* Report Container */
+#report {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Slightly lighter background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+}
+
+/* Report Text */
+#report p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Highlight Important Information */
+#report p strong {
+    color: #00bcd4; /* Highlight key values with teal */
+}
+
+/* Error Message Styling */
+#report p[style*="color: red"] {
+    color: #e57373;
+    font-weight: bold;
+}
+
+/* Links (if any are added later) */
+a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #report {
+        padding: 15px;
+    }
+}
